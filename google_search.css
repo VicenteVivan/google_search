@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    text-align: justify;
+    border-bottom: 1px solid gainsboro;
+    padding: 20px;
+}
+
+nav > div {
+    display: inline-block;
+}
+
+#search-bar {
+    width: 600px;
+    border: 1px solid gainsboro;
+    border-radius: 30px;
+    padding: 15px 30px;
+}
+
+#login {
+    width: 150px;
+    padding: 8px 0;
+}
+
+#google-functions {
+    margin-top: 15px;
+    margin-left: 180px;
+    width: 100%;
+    text-align-last: initial;
+}
+
+#google-functions > a {
+    margin: 0px 15px;
+    font-size: 13px;
+    color: rgb(95, 95, 95);
+}
+
+a {
+    color: rgb(31, 31, 185);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#search-results {
+    padding-top: 30px;
+    padding-left: 180px;
+}
+
+.texto-gris {
+    color: rgb(95, 95, 95);
+}
+
+.result {
+    width: 600px;
+}
+
+.result-name > a {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.result-link,
+.result-info {
+    font-size: 14px;
+}
