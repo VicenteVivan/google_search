@@ -1,4 +1,5 @@
 body {
+    max
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -6,7 +7,7 @@ body {
 nav {
     text-align: justify;
     border-bottom: 1px solid gainsboro;
-    padding: 20px;
+    padding: 10px 20px 20px 20px;
 }
 
 nav > div {
@@ -25,6 +26,12 @@ nav > div {
     border: 1px solid gainsboro;
     border-radius: 30px;
     padding: 15px 30px;
+    background-image: url("search.png");
+    background-position-y: center;
+    background-position-x: 530px;
+    background-size: 115px;
+    background-repeat: no-repeat;
+
 }
 
 #google-apps-icon {
@@ -46,15 +53,30 @@ button#login {
 
 #google-functions {
     margin-top: 15px;
-    margin-left: 180px;
+    margin-left: 160px;
     width: 100%;
     text-align-last: initial;
 }
 
 #google-functions > a {
-    margin: 0px 15px;
+    position: relative;
+    margin: 0px 10px;
     font-size: 13px;
     color: rgb(95, 95, 95);
+}
+
+#google-functions > a:hover {
+    text-decoration: none;
+}
+
+#google-functions > #todos::after {
+    content: "";
+    width: 85px;
+    height: 3px;
+    background-color: #4284f3;
+    position: absolute;
+    bottom: -21px;
+    left: -15px;
 }
 
 a {
@@ -97,6 +119,17 @@ a:hover {
     border: 1px solid gainsboro;
     border-radius: 8px;
     transform: translate(-3px, 0);
+    position: relative;
+}
+
+#preguntas-relacionadas::after {
+    content: "Comentarios";
+    position: absolute;
+    font-style: italic;
+    font-size: 12px;
+    color: gray;
+    bottom: -18px;
+    right: 12px;
 }
 
 #preguntas-relacionadas > #preguntas-title {
