@@ -13,16 +13,35 @@ nav > div {
     display: inline-block;
 }
 
+#google-logo {
+    position: relative;
+    top: 12px;
+    left: 15px;
+}
+
 #search-bar {
+    margin-left: 50px;
     width: 600px;
     border: 1px solid gainsboro;
     border-radius: 30px;
     padding: 15px 30px;
 }
 
-#login {
-    width: 150px;
-    padding: 8px 0;
+#google-apps-icon {
+    position: relative;
+    opacity: 0.8;
+    right: 15px;
+    top: 6px;
+}
+
+button#login {
+    margin-right: 15px;
+    background-color: #4284f3;
+    color: white;
+    padding: 10px 22px;
+    border: 0px;
+    font-size: 13px;
+    border-radius: 4px;
 }
 
 #google-functions {
@@ -57,15 +76,38 @@ a:hover {
 }
 
 .result {
+    margin-bottom: 30px;
     width: 600px;
 }
 
 .result-name > a {
     font-size: 20px;
-    line-height: 40px;
+    line-height: 35px;
 }
 
 .result-link,
 .result-info {
     font-size: 14px;
+}
+
+#preguntas-relacionadas {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 650px;
+    border: 1px solid gainsboro;
+    border-radius: 8px;
+    transform: translate(-3px, 0);
+}
+
+#preguntas-relacionadas > #preguntas-title {
+    font-size: 18px;
+}
+
+#preguntas-relacionadas > div {
+    padding: 15px;
+    border-bottom: 1px solid gainsboro;
+}
+
+#preguntas-relacionadas > #ultima-pregunta {
+    border: 0;
 }
